@@ -1,0 +1,753 @@
+.main_baner{
+    display: flex;
+    width: 100%;
+    height: 850px;   
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.main_middle_caption{
+    display: block;
+    text-align: center;
+}
+.head_text{
+    width: 100%;
+    height: 68px;
+
+    font-size: 48px;
+    
+    color: #735440;
+}
+.head_button{
+    min-width: 160px;
+    height: 55px;
+    
+    background: #57984C; 
+    color: white;
+    cursor: pointer;
+    border:5px solid #57984C;
+    
+    font-size: large;
+
+    margin-top: 20px;
+}
+.head_button p{
+    color: white;
+}
+/***********************************************************************************/
+
+
+.products{
+    position: relative;
+    width: 100%;
+    height: 190px;
+
+    white-space: nowrap;
+    text-align: center;
+}
+
+
+.product_wheat, 
+.product_clover{
+    max-width: 60px;   
+    margin: 3% 1% 3% 1%;
+}
+
+.product_watermalon{
+    max-width: 225px;
+    margin: 3% 1% 3% 1%;
+  
+}
+.product_sunflower{
+    max-width: 210px;   
+    margin: 3% 1% 3% 1%;
+} 
+.product_eggplant{
+    margin: 3% 1% 3% 1%;
+}
+.product_tomato{
+    max-width: 72px;   
+    margin: 3% 1% 3% 1%;
+}
+.product_ornamental_1{
+    max-width: 60px;
+    margin: -60px 3% 6% 5%;
+}
+.product_ornamental_2{
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: -20px 3% 3.5% -160px;
+}
+
+
+z/***********************************************************************************/
+
+.vision_mission{
+    position: flex;
+    width: 100%;
+    height: 1155px;
+}
+.union{
+    position: absolute;
+    width: 100%;
+    height: 1155.84px;
+    background: #e9e9e9;
+    mix-blend-mode: darken;
+}
+.main_vision_mission{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.main_vision_mission_text{
+    display: block;
+    text-align: left;
+    margin: 70px;
+}
+.main_mission{
+    display: flex;
+
+}
+.img_2{
+
+    max-width: 540px;
+    height: 500px;
+    margin: 5px;
+
+}
+.img_3{
+    max-width: 540px;
+    height: 500px;
+}
+
+.vision_text1{
+    max-width: 197px;
+    height: 91px;
+
+    margin: 5px;
+    font-size: 64px;
+
+    color: #324950;
+}
+.vision_text2{
+    max-width: 400px;
+    height: 150px;
+    
+    margin: 5px;
+    font-size: 20px;
+    
+    color: #324950;
+}
+.vision_img{
+    max-width: 47.24px;
+    height: 6.24px;
+}
+.mission_text1{
+    max-width: 244px;
+    height: 91px;
+
+    font-size: 64px;
+
+    color: #324950;
+}
+.mission_img{
+    max-width: 47.24px;
+    height: 6.24px;
+}
+.mission_text2{
+    max-width: 495px;
+    height: 99px;
+    
+    font-size: 20px;
+
+    color: #324950;
+}
+/***********************************************************************************/
+
+.main_activity{
+    position: block;
+    width: 100%;
+    height: 640px;
+
+    margin-top: 100px;
+
+    justify-content: center;
+    text-align: center;
+    
+    background: #EDEDED;
+}
+.activity_header{
+    display: block;
+    
+    justify-content: center;
+    text-align: center;
+    
+    width: 100%;
+    max-width: 784px;
+    height: 91px;
+}
+.activity_header_text1{
+    
+    font-size: 64px;
+    color: #324950;
+}
+.activity_img1{
+    margin: 50px;
+    width: 47.24px;
+    height: 6.24px;
+}
+.main_activity_content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+.__main_activity_content{
+    display: block;
+    text-align: center;
+    width: 33.3%;
+}
+.activity_img2{
+    max-width: 354px;
+    height: 261px;
+}
+.activity_img3{
+    max-width: 232px;
+    height: 232px; 
+}
+.activity_img4{
+    max-width: 295px;
+    height: 213px;  
+}
+.activity_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+.activity_text_1{
+    max-width: 243px;
+    height: 34px;
+    
+    font-size: 24px;
+    align-items: center;
+   
+    padding-bottom: 12px;
+    border-bottom: 1px solid #57984C;
+    color: #57984C;
+}
+.activity_text_2{
+    width: 243px;
+    height: 52px;
+    
+    font-size: 18px;
+    
+    text-align: center;
+    color: #324950;    
+}
+
+
+
+/*-----TOMATO.html---------------------------------------------------------------------------------------------*/
+
+
+.tomato_cont{
+    display: block;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.tomato_title{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+    font-size: 42px;
+
+    color: #324950;
+}
+.tomato_title_img{
+    display: block;
+    width: 47.24px;
+    height: 6.24px;
+    margin-top: 3%;
+}
+.tomato_text1,
+.tomato_text2{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    font-size: 20px;
+}
+.tomato_text1{ 
+    color: #324950;
+}
+.tomato_text2{ 
+    border-left: 4px solid #EB5757;
+    padding-left: 25px;
+    color: #324950;
+}
+.tomato_restangle{
+    display: flex;
+    height: auto;
+    
+    margin-top: 3%;
+    background: rgba(205, 176, 205, 0.916);
+}
+.tomato_restangle_blok{
+    display: block;
+    width: 27.3%;
+    height: auto;
+    margin: 3%;
+}
+.tomato_restangle_1{
+    display: block;
+    width: 100%;
+    height: auto;
+   
+    font-size: 22px;
+   
+    border-bottom: 1px solid #324950;
+    padding-bottom: 15px;
+    color: #324950;
+}
+
+.tomato_text3{
+    display: block;
+    height: auto;     
+
+    font-size: 20px;
+    margin-top: 3%;
+    border-left: 4px solid #EB5757;
+    padding-left: 25px;
+    color: #324950;
+}
+
+
+.tomato_main_info{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+
+}
+
+
+.tomato_info{
+    display: block;
+    width: 27.3%;
+    height: auto;
+    margin: 3%;
+}
+.tomato_info_text{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+    font-size: 18px;
+    
+    text-align: center;
+
+    background: rgba(205, 176, 205, 0.916);
+    color: black;
+}
+.tomato_restangle_0{
+    display: inline;
+    width: 100%;
+    height: auto;
+
+    background: rgba(205, 176, 205, 0.916);
+}
+
+.tomato_info_img{
+    position: flex;
+    width: 100%;
+    height: auto;
+}
+
+
+/*----TOMATO_ONE.html----------------------------------------------------------------------------------------------------*/
+.tomato_one_bg{
+
+    display: none;
+    width: 100%;
+    height: 100%;
+    
+    background: #E5E5E5;
+
+    z-index: 40;    
+    mix-blend-mode: darken;
+
+}
+div.tomato_one_style{
+    display: none;
+    width: 100%;
+    height: 100%;
+    
+    background: white;
+}
+/***********************************************************************************/
+.tomato_one_caption_conteiner{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+}
+.tomato_one_caption_conteiner_1,
+.tomato_one_caption_conteiner_2{
+    display: block;
+    width: 50%;
+    height: auto;
+}
+/***********************************************************************************/
+
+.tomato_one_breadcrubs{
+    display: flex;
+    width: 60%;
+    height: auto;
+    color: #57984C;
+}
+/***********************************************************************************/
+
+.tomato_one_caption1{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.tomato_one_caption1_1, 
+.tomato_one_caption1_2{
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-size: 54px;
+   
+}
+.tomato_one_caption1_1{
+    color: #324950;
+    margin-top: 2%;
+}
+.tomato_one_caption1_2{
+    color:#57984C;
+}
+
+
+.tomato_one_caption1_img{
+    display: flex;
+    width: 47.24px;
+    height: 6.24px;
+    margin-top: 4%;
+}
+/***********************************************************************************/
+.tomato_one_caption2{
+    display: flex;
+    width: 60%;
+    height: auto;
+    margin-top: 4%;
+}
+.tomato_one_caption2_img{
+    display: flex;
+    max-width: 40%;
+    max-height: 80px;
+}
+.tomato_one_caption2_1{
+    display: flex;
+    width: 100%;
+    height: auto;
+    
+    font-size: 30px;
+    
+    color: #CF2333;
+}
+/***********************************************************************************/
+.tomato_one_main_img{
+    display: flex;
+    max-width: 100%;
+    max-height: 500px;
+    margin-top: 6%;
+    background: url(../images/png/tomato_info.jpg);
+}
+/***********************************************************************************/
+.tomato_one_all_characteristic{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.tomato_one_all_characteristic_column1,
+.tomato_one_all_characteristic_column2,
+.tomato_one_all_characteristic_column3{
+    display: block;
+    height: auto;
+    margin: 3%;
+}
+.tomato_one_all_characteristic_column1{
+    text-align: left;
+    max-width: 27.3%;
+
+}
+.tomato_one_all_characteristic_column2{
+    padding-top: 4.6%;
+    text-align: left;
+    max-width: 15.3%;
+}
+.tomato_one_all_characteristic_column3{
+    max-width: 11.3%;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+}
+/***********************************************************************************/
+
+.tomato_one_characteristics,
+.tomato_one_plant,
+.tomato_one_fruit{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+.tomato_one_characteristics_caption,
+.tomato_one_plant_caption{
+    display: flex;
+    width: 35%;
+    height: auto;
+    
+    margin-top: 3.5%;
+    border-bottom: 1px solid #57984C;
+    padding-bottom:12px;
+
+    font-size: 20px;
+    
+    color: #57984C;
+}
+.tomato_one_characteristics_text1{
+    width: 100%;
+    height: auto;
+    
+    font-size: 17px;
+    text-align: start;
+    color: #324950;
+}
+
+
+.tomato_one_plant_list1{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+    font-size: 17px;
+}
+.tomato_one_plant_list1{
+    color:#57984C;
+}
+.tomato_one_plant_list1 li  {
+    color: #324950;
+}
+
+/***********************************************************************************/
+
+.tomato_one_cycle,
+.tomato_one_color{
+
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+/* .btn_export_to_pdf{
+    display: flex;
+    min-width: 225px;
+    min-height: 55px;
+    box-sizing: border-box;
+
+    background: #FFFFFF;
+    color: #57984C;
+
+    font-size: 22px;
+    padding: 0 20px;
+    border: 2px solid #57984C;
+    border-radius: 60px;
+} */
+.btn_add_cart {
+    display: inline-block; 
+    box-sizing: border-box;
+    padding: 0 25px;
+    margin: 0 15px 15px 0;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #444;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation; 
+    vertical-align: top;
+    transition: box-shadow 0.2s;
+    color: #57984C;
+    user-select: none;
+    width: 240px;
+}
+.btn_add_cart:focus-visible {
+    border: 1px solid #4c51f9;
+    outline: none;
+}
+.btn_add_cart:hover {
+    transition: all 0.2s;
+    box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+.btn_add_cart:active {
+    background-color: #808080;
+}
+.btn_add_cart:disabled {
+    background-color: #eee;
+    border-color: #eee;
+    color: #444;
+    cursor: not-allowed;
+}
+/*--------------------------------------------------------------------------------------------------------*/
+
+.contact_us_bg{
+    display: flex;
+    width: 100%;
+    height: 480px;
+}
+.contact_us_vision{
+    display: block;
+    width: 100%;
+    height: 109.24px;
+      
+}
+.contact_us_vision_text1{
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    font-size: 44px;
+    
+    color: #324950;    
+}
+.contact_us_vision_img1{
+    display: flex;
+    width: 47.24px;
+    height: 6.24px;
+    margin-top: 2%;  
+}
+.contact_us_form{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.cart_table{
+    width: 95%;
+    text-align: center;
+    border: 2px solid #324950;
+    margin-right: 4%;
+    margin-top: 5%;
+
+    font-size: 19px;
+}
+.cart_caption{
+    font-size: 34px;
+    color: #324950;
+}
+table.cart_table td,
+table.cart_table th{
+    border: 2px solid #324950;
+}
+.cart_table_content_img{
+    max-width: 150px;
+    max-height: 33%;
+}
+.contact_us_form_first_colum {
+    display: block;
+    width: 27.3%;
+    margin: 3% 3% 3% 0;
+}
+.contact_us_form_second_colum {
+    display: block;
+    width: 60%;
+    margin: 3% 0 3% 3%;
+}
+.contact_us_form_text {
+    font-size: 17px;
+    color: #324950;
+    margin-bottom: 10.5px;
+}
+.contact_us_form_text_alt{
+    font-size: 18px;
+    font-weight: 600;
+}
+.contact_us_form_input,
+.contact_us_form_textarea,
+.contact_us_form_select{
+    box-sizing: border-box;
+
+    width: 100%;
+    min-height: 45px;
+
+    margin-bottom: 20px;
+
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+}
+.contact_us_form_textarea {
+    width: 100%;
+
+}
+.contact_us_form_second_colum_last_row{
+    width: 100% ;
+    align-items: center;
+    text-align: center;
+}
+.contact_us_form_img1 {
+    max-width: 200px;
+    height: 30px;
+    margin: 0 4% 0 4%;
+
+}
+.contact_us_form_input_alt{
+    width: 33%;
+    min-height: 45px;
+    margin: 4% 0;
+
+}
+.contact_us_form_btn {
+    width: 28%;
+    height: 50px;
+    margin: 0 4% 0 4%;
+    font-size: 20px;
+    color: white;
+    background: #57984C;
+    border-radius: 60px;
+
+}
+.contact_us_restangle {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.contact_us_restangle_text_alt{
+    color: #57984C;
+    border-bottom: 1px solid #57984C;
+    padding-bottom: 10px;
+}
+.contact_us_restangle_text{
+    color: #324950;
+    text-align: center;
+    font-size: 17px;
+    margin: 3%;
+}
+.contact_us_restangle_telephone {
+    color: #57984C;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/middle.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    
+</head>
+<body class="contact_us_style" >
+    <header class="header_alt">
+        <nav class="header_container _container_alt">    
+            <div class="cont_logo">
+                <img class="logo" src="images/png/logo.png">
+            </div>
+            <div class="cont_menu">
+                <div class="cont_search">
+                    <input class="input_search __text_preset_2" placeholder="Search" type="text">
+                    <button class="button_search"><img src="images/png/ico_search.png"></button>
+                </div>
+                <input type="checkbox" id="burger_menu">
+                <label for="burger_menu"></label>
+                <div class="cont_list1">
+                    <ul class="list1 __text_preset_3">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Company Profile</a></li>
+                        <li><a href="tomato.html">Products</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">R & D</a></li>
+                        <li><a class="__selected" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <img class="contact_us_bg" src="images/png/contact_us_bg.jpg">
+    
+    <nav class="_container_alt" id="app">
+        <div class="contact_us_vision">
+            <p class="contact_us_vision_text1 __text_preset_1">Contact us</p>
+            <img class="contact_us_vision_img1" src="images/png/img_vision.png">
+        </div> 
+        <div class="The_cart __text_preset_1" v-if="cart.length > 0">
+            <p class="cart_caption">The cart</p>
+            <table  class="cart_table">
+                <tr>
+                    <th>Photo</th>
+                    <th>Product Name </th>
+                    <th>Description</th>
+                    <th>Delete</th>
+                </tr>
+                <tr v-for="c in cart" > 
+                    <td><img :src="'images/grapes_img/'+c.image" class="cart_table_content_img"></td>
+                    <td> {{c.name}} </td>
+                    <td> {{c.short_text}} </td>
+                    <td><a href="#" @click.prevent="removeFromCart(c.id)">X</a></td>
+                </tr>
+            </table>
+        </div>
+        <nav>
+            <form class="contact_us_form" v-if="!isOrderPlaced" @submit.prevent="makeOrder">
+           
+                <div class="contact_us_form_first_colum">
+                    <p class="contact_us_form_text __text_preset_2">Name*</p>
+                    <input class="contact_us_form_input" type="text" required v-model="contactFields.name">
+        
+                    <p class="contact_us_form_text __text_preset_2">Company Name</p>
+                    <input class="contact_us_form_input" type="text" v-model="contactFields.company_name">
+        
+                    
+                    <p class="contact_us_form_text __text_preset_2">Position</p>
+                    <input class="contact_us_form_input" type="text" v-model="contactFields.position">
+            
+                     
+                    <p class="contact_us_form_text __text_preset_2">City</p>
+                    <input class="contact_us_form_input" type="text" v-model="contactFields.city">
+                                
+                    
+                    <p class="contact_us_form_text __text_preset_2">Country</p>
+                    <input class="contact_us_form_input" type="text" v-model="contactFields.country">
+                                
+                    
+                    <p class="contact_us_form_text __text_preset_2">Telephone</p>
+                    <input class="contact_us_form_input" type="text" v-model="contactFields.telephone">
+                    
+                    <p class="contact_us_form_text __text_preset_2">Email*</p>
+                    <input class="contact_us_form_input" type="email" required v-model="contactFields.email">
+        
+                </div>
+                 
+                 
+                 <div class="contact_us_form_second_colum">
+                    
+                    <p class="contact_us_form_text __text_preset_2">You are a</p>
+                    <select class="contact_us_form_select" v-model="contactFields.you_are_a">
+                        <option value="seed producer">Seed producer</option>
+                    </select>
+            
+                                
+                    <p class="contact_us_form_text __text_preset_2">If other, please specify</p>
+                    <input class="contact_us_form_input" type="text" v-model="contactFields.specify">
+            
+                                
+                    <p class="contact_us_form_text __text_preset_2">You are interested in</p>
+                    <textarea class="contact_us_form_textarea" cols="60" rows="25" v-model="contactFields.interested"></textarea>
+            
+                    
+                    <p class="contact_us_form_text __text_preset_2">Please type this code</p>
+                    <div class="contact_us_form_second_colum_last_row">
+                        <img class="contact_us_form_img1" src="images/png/contact_us_capha.png">
+                        <input class="contact_us_form_input_alt" type="text">
+                        <button class="contact_us_form_btn __text_preset_1">Send Message</button>    
+                    </div>
+                 </div>
+                            
+            </form> 
+            
+            <form class="contact_us_form" v-else>
+           
+                <div class="contact_us_form_first_colum">
+                    <p class="contact_us_form_text_alt __text_preset_2">Name: {{contactFields.name}}</p>
+                    <p class="contact_us_form_text_alt __text_preset_2">Company Name: {{contactFields.company_name}}</p>        
+                    <p class="contact_us_form_text_alt __text_preset_2">Position: {{contactFields.position}}</p>            
+                    <p class="contact_us_form_text_alt __text_preset_2">City: {{contactFields.city}}</p>
+                    <p class="contact_us_form_text_alt __text_preset_2">Country: {{contactFields.country}}</p>
+                    <p class="contact_us_form_text_alt __text_preset_2">Telephone: {{contactFields.telephone}}</p>
+                    <p class="contact_us_form_text_alt __text_preset_2">Email: {{contactFields.email}} </p>
+                </div>
+                
+                
+                <div class="contact_us_form_second_colum">
+                    <p class="contact_us_form_text_alt __text_preset_2">You are a: {{contactFields.you_are_a}}</p>             
+                    <p class="contact_us_form_text_alt __text_preset_2">If other, please specify: {{contactFields.specify}}</p>
+                    <p class="contact_us_form_text_alt __text_preset_2">You are interested in: {{contactFields.interested}}</p>                    
+                </div>
+                            
+             </form> 
+    
+        </nav>
+        <div class="contact_us_restangle">
+            <p class="contact_us_restangle_text_alt">Our Address</p>
+            <p class="contact_us_restangle_text __text_preset_1">AGRIDERA Seeds & Agriculture Ltd. <br>
+                P.O Box 103,<br>
+                Gedera 70750, Israel. <br>
+                Telephone: <b class="contact_us_restangle_telephone">+972 8 944 9222</b></p>
+        </div>
+        
+    </nav>
+    
+    <footer>
+        <div class="restangle5 ">
+            <div class="_container1 _container_alt">
+                <div class="cont_list">
+                    <ul class="list2">
+                        <li><a href="#">PROFILE</a></li>
+                        <li><a href="#">MANAGMENT</a></li>
+                        <li><a href="tomato.html">PRODUCTS</a></li>
+                        <li><a href="#">R&D</a></li>
+                        <li><a href="#">LINKS</a></li>
+                        <li><a href="#">SITEMAP</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                
+                <div class="cont_list_1">
+                    <ul class="list3 __text_preset_1 ">
+                        <li><a href="#"><img src="images/icons/Ico_in.png"></a></li>
+                        <li><a href="#"><img src="images/icons/Ico_inst.png"></a></li>
+                        <li><a href="#"><img src="images/icons/Ico_tube.png"></a></li>
+                        <li><a href="#"><img src="images/icons/Ico_tw.png"></a></li>
+                        <li><a href="#"><img src="images/icons/Ico_fb.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="restangle4 __text_preset_1">
+            <p>AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
+        </div>
+    </footer>
+<script src="js/main.js"></script>
+</body>
+</html>

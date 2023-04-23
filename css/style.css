@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Regular.eot');
+    src: local('../fonts/Roboto Slab Regular'), local('../fonts/RobotoSlab-Regular'),
+        url('../fonts/RobotoSlab-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Regular.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Regular.woff') format('woff'),
+        url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.eot');
+    src: local('../fonts/Roboto Slab Bold'), local('../fonts/RobotoSlab-Bold'),
+        url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Light.eot');
+    src: local('../fonts/Roboto Slab Light'), local('../fonts/RobotoSlab-Light'),
+        url('../fonts/RobotoSlab-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Light.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Light.woff') format('woff'),
+        url('../fonts/RobotoSlab-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Thin.eot');
+    src: local('../fonts/Roboto Slab Thin'), local('../fonts/RobotoSlab-Thin'),
+        url('../fonts/RobotoSlab-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Thin.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Thin.woff') format('woff'),
+        url('../fonts/RobotoSlab-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+*{
+    font-family: 'Roboto Slab';
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color:#000;
+}
+body{
+    background-color:white;
+}
+body.tomato_style{
+    background-color:rgba(205, 176, 205, 0.916);
+}
+body.tomato_one_style{
+    background-color:#E5E5E5;
+}
+body.contact_us_style{
+    background: #E5E5E5;
+}
+.__text_preset_1{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 142.7%;
+}
+.__text_preset_2{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162.7%;
+}
+.__text_preset_3{
+    font-family: 'Heebo';
+    font-style: large;
+    font-weight: 800;
+}
+.__text_preset_4{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    
+}
+._container{
+    max-width: 90%;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+._container_alt{
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: content-box;
+}

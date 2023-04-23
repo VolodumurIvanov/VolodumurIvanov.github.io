@@ -1,0 +1,58 @@
+footer{
+  display: flex;
+  flex-wrap: wrap;  
+}
+.restangle4{
+  position: flex;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+
+  background: #324950;
+}
+.restangle4 p{
+  position: flex;
+  width: 100%;
+  height: 20px;
+
+  font-size: 14px;
+  
+  color: #B9B9B9;
+}
+
+.restangle5 {
+  display: flex;
+  width: 100%; 
+  background: #2D3F45;
+  margin: auto;
+}
+._container1 {
+  display: flex;
+  justify-content: center;
+}
+.list2 {
+  display: flex;
+  list-style: none;
+  gap: 5%;
+  align-items: center;
+}
+ul.list2 li a{
+  color: white;
+  
+}
+.cont_list {
+  display: flex;
+  min-width: 724px;
+  margin: 2% 5% 2% auto;
+}
+.cont_list_1 {
+  display: flex;
+  margin: 2% 5% 2% auto;
+}
+.list3 {
+  display: flex;
+  list-style: none;
+  gap: 5%;
+}
+
+

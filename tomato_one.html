@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tomato one</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/middle.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+</head>
+<body class="tomato_one_style">
+    <div class="tomato_one_style"><img class="tomato_one_bg" src="images/svg/tomato_one_bg.svg"></div>
+    
+    <header class="header_alt">
+        <nav class="header_container _container_alt">    
+            <div class="cont_logo">
+                <img class="logo" src="images/png/logo.png">
+            </div>
+            <div class="cont_menu">
+                <div class="cont_search">
+                    <input class="input_search __text_preset_2" placeholder="Search" type="text">
+                    <button class="button_search"><img src="images/png/ico_search.png"></button>
+                </div>
+                <input type="checkbox" id="burger_menu">
+                <label for="burger_menu"></label>
+                <div class="cont_list1">
+                    <ul class="list1 __text_preset_3">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Company Profile</a></li>
+                        <li><a href="tomato.html">Products</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">R & D</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <nav class="_container_alt" id="app">
+
+
+    <div class="tomato_one_caption_conteiner">
+        <div class="tomato_one_caption_conteiner_1">
+            <a href="tomato.html"><div class="tomato_one_breadcrubs"><img src="images/svg/arrow.svg"><h3>Return to All Grapes</h3></div></a>
+            <div class="tomato_one_caption1">
+                <p class="tomato_one_caption1_1 __text_preset_1"> {{ product.name }} </p>
+                <p class="tomato_one_caption1_2 __text_preset_1"> {{ product.short_text }} </p>
+                <img class="tomato_one_caption1_img" src="images/png/img_vision.png">
+            </div>
+        
+            <div class="tomato_one_caption2">
+                <img class="tomato_one_caption2_img" src="images/png/tomato_one_img1.png">
+                <p class="tomato_one_caption2_1 __text_preset_1">Very high yield and excellent fruits quality!</p>
+            </div>
+        </div>
+        <div class="tomato_one_caption_conteiner_2"><img class="tomato_one_main_img" :src="'images/grapes_img/'+product.image"></div>
+    </div>
+
+
+    <div class="tomato_one_all_characteristic">
+
+        <div class="tomato_one_all_characteristic_column1">
+            
+            <div class="tomato_one_characteristics">
+                <p class="tomato_one_characteristics_caption __text_preset_1">Characteristics</p>
+                <p class="tomato_one_characteristics_text1 __text_preset_2">
+                    <strong>Resistance</strong><br>
+                    HR: ToMV:0-2; Fol: 1,2; Ve/Vd;<br> 
+                    IR: TYLCV
+                </p>
+            </div>
+        
+            <div class="tomato_one_plant">
+                <p class="tomato_one_plant_caption">Plant</p>
+                <ul class="tomato_one_plant_list1 __text_preset_4">
+                    <li>Strong vigor that provides good leaf coverage.</li>
+                    <li>Very high productivity with good fruit setting.</li>
+                    <li>Early matured variety.</li>
+                </ul>
+            </div>
+            
+            <div class="tomato_one_fruit">
+                <p class="tomato_one_plant_caption">Fruit</p>
+                <ul class="tomato_one_plant_list1 __text_preset_4">
+                    <li>Long shelf life on plant and post harvest.</li>
+                    <li>Nice shiny attractive deep red color.</li>
+                    <li>Average fruit size: 140 – 160 grams.</li>
+                </ul>
+            </div>
+
+        </div>
+        
+        <div class="tomato_one_all_characteristic_column2">
+            
+            <div class="tomato_one_cycle">
+                <p class="tomato_one_plant_caption">Cycle</p>
+                <ul class="tomato_one_plant_list1">
+                    <li>Spring</li>
+                    <li>Fall</li>
+                    <li>Winter</li>
+                </ul>
+            </div>
+
+            <div class="tomato_one_color">
+                <p class="tomato_one_plant_caption">Color</p>
+                <ul class="tomato_one_plant_list1">
+                    <li>Red</li>
+                </ul>
+            </div>
+
+        </div>
+    
+        <div class="tomato_one_all_characteristic_column3">
+            <a href="#"><button v-on:click="addToCart(product.id)"  v-if="!btnVisible" class="btn_add_cart">Add to cart</button></a>
+            <a href="contact.html"><button  v-if="btnVisible" class="btn_add_cart">Go to cart</button></a>
+        </div> 
+
+    </div>
+
+    </nav>
+    
+
+
+    <footer>
+        <div class="restangle5 ">
+            <div class="_container1 _container_alt">
+                <div class="cont_list">
+                    <ul class="list2">
+                        <li><a href="#">PROFILE</a></li>
+                        <li><a href="#">MANAGMENT</a></li>
+                        <li><a href="tomato.html">PRODUCTS</a></li>
+                        <li><a href="#">R&D</a></li>
+                        <li><a href="#">LINKS</a></li>
+                        <li><a href="#">SITEMAP</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                
+                <div class="cont_list_1">
+                    <ul class="list3 __text_preset_1 ">
+                        <li><a href="#"><img src="images/icons/Ico_in.png"></a></li>
+                        <li><a href="#"><img src="images/icons/Ico_inst.png"></a></li>
+                        <li><a href="#"><img src="images/icons/Ico_tube.png"></a></li>
+                        <li><a href="#"><img src="images/icons/Ico_tw.png"></a></li>
+                        <li><a href="#"><img src="images/icons/Ico_fb.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="restangle4 __text_preset_1">
+            <p>AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

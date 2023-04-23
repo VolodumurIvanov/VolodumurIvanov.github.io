@@ -1,0 +1,97 @@
+.img_bg{
+    position: absolute;
+    width: 100%;
+    height: 850px;
+    left: 0px;
+    top: 0px;
+    background: url(../images/png/bg.png);
+    mix-blend-mode: darken;
+}
+header.header{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.header_container{
+    display: flex;
+    min-height: 114px;
+    align-items: center;
+}
+.cont_logo{
+    position: flex;
+    max-width: 226px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 5px;
+}
+.logo{
+    mix-blend-mode: darken;
+}
+.cont_menu{
+    display: block;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+
+}
+.cont_search{
+    display: flex;
+    margin-left: 40%;    
+    justify-content: flex-end;
+}
+.input_search{
+    all: unset;
+
+    width: 400px;
+    height: 24px;
+
+    border-bottom: 1px solid black;
+    padding-bottom: 4px;
+    margin-bottom: 5px;
+
+    font-size: 16px;
+}
+.button_search{
+    display: flex;
+    margin: 0px 0 10px -25px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    background:none;
+    border:0;
+}
+
+#burger_menu, [for=burger_menu]{
+    display: none;
+}
+.list1{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    height: 26px;
+    justify-content: end;
+
+}
+
+
+.header_alt{
+    display: flex;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 52;
+    background-color: white;
+}
+
+.tomato_bg{
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    background: url(/images/grapes_img/bg_grapes.jpg);
+}

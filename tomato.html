@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Grepes</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/middle.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+</head>
+<body class="tomato_style">
+    <header class="header_alt">
+        <nav class="header_container _container_alt">    
+            <div class="cont_logo">
+                <img class="logo" src="images/png/logo.png">
+            </div>
+            <div class="cont_menu">
+                <div class="cont_search">
+                    <input class="input_search __text_preset_2" placeholder="Search" type="text">
+                    <button class="button_search"><img src="images/png/ico_search.png"></button>
+                </div>
+                <input type="checkbox" id="burger_menu">
+                <label for="burger_menu"></label>
+                <div class="cont_list1">
+                    <ul class="list1 __text_preset_3">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Company Profile</a></li>
+                        <li><a class="__selected" href="tomato.html">Products</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">R & D</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <img class= "tomato_bg" src="images/grapes_img/bg_grapes.jpg">
+
+   <middle class="_container_alt">
+        <div class="tomato_cont _container_alt">
+            <h1 class="tomato_title __text_preset_1">Agridera Fresh Market Grapes Hybrids</h1>
+            <img class="tomato_title_img" src="images/png/img_vision.png" >
+            <p class="tomato_text1 __text_preset_2">Agridera aims to be one of the world's leading companies in the breeding, production, and marketing of tomato seeds.<strong>We invest intensively in research and development to provide solutions to growers and consumers in numerous countries around the world.</strong> 
+                In particular, we breed improved disease-resistant cultivars adapted to different markets globally.
+                <br><br>
+                Currently, emphasis is placed on combining Tomato Yellow Leaf Curl Virus (TYLCV) and Tomato Spotted Wilt Virus (TSWV) resistances with other soil borne diseases into superior tomato breeding lines and hybrids. Moreover, comprehensive efforts are being undertaken to develop varieties resistance to TBRFV virus (Tomato Brown Rugose Fruit Virus). 
+                <br><br>
+                In terms of horticultural traits, breeding is for earliness, different fruit sizes, firmness, red fruit color, flavor, crack resistance, shelf life, and high/low temperature fruit set. Combinations of quality features and disease resistance are sought in a variety of types, namely round and elongated shapes. 
+            </p>
+            <p class="tomato_text2 __text_preset_2">
+                Agirdera Tomato breeding programs are focusing on three main segments: Greenhouse Indeterminate Tomatoes, Open-field Indeterminate Tomatoes, and Bush Type Open-field Tomatoes.
+            </p>    
+        </div>
+        <div class="tomato_restangle _container_alt">
+            <div class="tomato_restangle_blok">
+                <p class="tomato_restangle_1 __text_preset_1">Greenhouse Tomato Breeding Program</p>
+                <p class="tomato_restangle_2 __text_preset_2"><strong>This breeding is aimed for the Spanish and Turkish markets.</strong> For single and cluster picks, round fruit shape and resistances of TYLCV, TSWV, Nematodes and FORL (Fusarium oxysporum f.sp. radicis-lycopersici). Some hybrids may include more resistances, such as Cladosporium and Leveillula Taurica (Lv). </p>    
+            </div>
+
+            <div class="tomato_restangle_blok">
+                <p class="tomato_restangle_1 __text_preset_1">Open-field Indeterminate <br>Tomatoes</p>
+                <p class="tomato_restangle_2 __text_preset_2"><strong>This breeding is for Brazilian, Moroccan, and Turkish markets.</strong> The main focus is on large round shape fruits (200 grams plus); and resistances of TYLCV, TSWV, Nematodes and FORL. In the near future, F3 (Fusarium oxysporum f.sp. lycopersici) will be included as basic resistance in our cultivars.</p>    
+            </div>
+
+            <div class="tomato_restangle_blok">
+                <p class="tomato_restangle_1 __text_preset_1">Open-field Bush Type Tomatoes</p>
+                <p class="tomato_restangle_2 __text_preset_3"><strong>This breeding is for Mediterranean markets.</strong> We breed round and elongated shapes, standard sizes (140- 180 grams), and beef sizes (min. 180 grams up to 300 grams and more). We combine the resistances of TYLCV, TSWV and Nematodes as basic resistances in our hybrids. However, some hybrids may include more resistances, such as Cladosporium and Leveillula Taurica (Lv).</p>    
+            </div>
+        </div>
+        <p class="tomato_text3 __text_preset_2 _container_alt">Agridera operates through international and local distributers around the world. </p>
+
+        <nav class="tomato_main_info _container_alt" id="app">
+    
+            <div class="tomato_info" v-for="prod in products">
+                <a :href="'tomato_one.html#'+prod.id"><img class="tomato_info_img" :src="'images/grapes_img/'+prod.image"></a>
+                <div class="tomato_restangle_0">
+                    <p class="tomato_info_text __text_preset_1"><strong> {{prod.name}} </strong></p>
+                    <p class="tomato_info_text __text_preset_1"> {{prod.short_text}} </p>
+                </div>
+            </div>
+    
+        </nav>
+   </middle>
+
+
+
+   <footer>
+    <div class="restangle5 ">
+        <div class="_container1 _container_alt">
+            <div class="cont_list">
+                <ul class="list2">
+                    <li><a href="#">PROFILE</a></li>
+                    <li><a href="#">MANAGMENT</a></li>
+                    <li><a href="tomato.html">PRODUCTS</a></li>
+                    <li><a href="#">R&D</a></li>
+                    <li><a href="#">LINKS</a></li>
+                    <li><a href="#">SITEMAP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            
+            <div class="cont_list_1">
+                <ul class="list3 __text_preset_1 ">
+                    <li><a href="#"><img src="images/icons/Ico_in.png"></a></li>
+                    <li><a href="#"><img src="images/icons/Ico_inst.png"></a></li>
+                    <li><a href="#"><img src="images/icons/Ico_tube.png"></a></li>
+                    <li><a href="#"><img src="images/icons/Ico_tw.png"></a></li>
+                    <li><a href="#"><img src="images/icons/Ico_fb.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="restangle4 __text_preset_1">
+        <p>AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

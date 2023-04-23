@@ -1,0 +1,491 @@
+
+/*--------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 770px) {
+    .head_text{
+        font-size: 35px;
+    }
+    .products{
+        white-space: normal;
+        height: auto;
+    }
+    .product_wheat, 
+    .product_clover,
+    .product_watermalon,
+    .product_sunflower{
+        width: 25%;
+        margin: 3%;
+    } 
+    .product_eggplant,
+    .product_tomato,
+    .product_ornamental_1{
+        width: auto;
+    }
+    .product_eggplant{
+        margin-left: 6%;
+        margin-bottom: 3%;
+    }
+    .product_ornamental_1{
+        margin-right: -3%;
+        margin-bottom: 8%;
+        margin-left: 12%;
+    }
+    .product_ornamental_2{
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: -20px 3% 3.5% -110px;
+    }
+
+    .main_vision_mission_text{
+        margin: 2%;
+        text-align: left;
+    }
+    .main_vision_mission{
+        margin-top: 1%;
+    }
+    .vision_text1, .mission_text1{
+        font-size: 55px;
+        margin-top: 35%;
+    }
+    .cont_img2, 
+    .cont_img3{
+        display: flex;
+        max-width: 55%;
+        height: 22%;
+        margin-top: 15%;
+
+    }
+    .img_2, 
+    .img_3{
+        padding-top: 20px;
+        max-width: 420px;
+        height: 360px;
+    }
+    .activity_img1{
+        margin-top: 1%;
+    }
+    .activity_img2,
+    .activity_img3,
+    .activity_img4{
+        margin-top: 45%;
+        width: 240px;
+        height: 180px;
+    }
+    .restangle5{
+        display: block;
+    }
+    ._container1 {
+        display: block;
+    }
+    .list3 {
+        margin-left: 40%;
+    }   
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
+    .tomato_restangle{
+        display: block;
+    }
+    .tomato_restangle_blok{
+        width: 90%;
+        margin-left: 3%;
+        padding-top: 6%;
+        padding-bottom: 12%;
+    }
+    .tomato_main_info{
+        display: block;
+    }
+    .tomato_info{
+        width: 90%;
+        margin-top: 6%;
+        margin-bottom: 12%;
+    }
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
+
+    .header_container{
+        display: block;
+    }
+
+    .cont_search{
+        margin-left: 0;
+        justify-content: center;
+    }
+    .logo,
+    .cont_logo{
+        text-align: center;
+        max-width: none;
+    }
+    .list1{
+        justify-content: center;
+    }    
+/***********************************************************************************/
+    
+    .tomato_one_caption_conteiner{
+        display: block;
+        text-align: center;
+    }
+    img.tomato_one_breadcrubs{
+        width: 40%;
+        padding-left: 10%;
+    }
+    .tomato_one_caption_conteiner_1,
+    .tomato_one_caption_conteiner_2{
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .tomato_one_caption1_1, 
+    .tomato_one_caption1_2,
+    .tomato_one_caption1_img{
+        display: block;
+    }
+    .tomato_one_caption1_img{
+        padding-left: 46%;
+    }
+    .tomato_one_caption_conteiner_2{
+        padding-left: 5%;
+    }
+    .tomato_one_caption2{
+        padding-left: 14%;
+    }
+    .btn_add_cart{
+        width: 240px;
+    }
+/***********************************************************************************/
+    .tomato_one_all_characteristic{
+        display: block;
+    }
+    .tomato_one_all_characteristic_column1,
+    .tomato_one_all_characteristic_column2,
+    .tomato_one_all_characteristic_column3{
+        width: 90%;
+    }
+    .tomato_one_plant_caption{
+        font-size: 16px;
+
+    }
+    .tomato_one_characteristics_text1{
+        font-size: 13px;
+    }
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
+    .contact_us_form{
+        display: block;
+    }
+    .contact_us_form_first_colum{
+        width: 90%;
+        margin: 3%;
+    }
+    .contact_us_form_second_colum{
+        width: 90%;
+        margin: 3%;
+    }
+}
+/*--------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 400px) {
+    body{
+        background: #EDEDED;
+    }
+    .img_bg{
+        width: 100%;
+        height: 100%;
+        background:url(../images/png/bg.png)center/cover no-repeat;
+    }
+    [for=burger_menu]{
+        display: block;
+        position: fixed;
+        width: 5%;
+        right: 14%;
+        top: 15px;
+        z-index: 51;
+    }
+    [for=burger_menu]::before{
+        content: "☰";
+        font-size: 50px;
+        animation: show .5s ease;
+    }
+    
+    #burger_menu:checked +[for=burger_menu]::before{
+        content: "⮾";
+        font-size: 50px;
+        color: white;
+    }
+    #burger:checked +[for=burger]::before{
+        content: '⮾';
+    }
+    @keyframes show {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .cont_list1{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        background: rgba(52, 55, 52, 0.728);
+        width: 100%;
+        height: 50%;
+    }
+    #burger_menu:checked + label + div{
+        display: block;
+    } 
+    .list1{
+        margin: 0;
+        display: block;
+        font-size: 24px;
+        user-select: none;
+    }
+    .list1 li{
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .list1 li a{
+        color: white;
+    }
+    .__selected{
+        padding-bottom: 4px;
+        border-bottom: 5px solid rgba(196, 242, 127, 0.792);    
+    }
+    ul.list1 li a[href="index.html"],
+    ul.list1 li a[href="tomato.html"],
+    ul.list1 li a[href="index.html"],
+    ul.list1 li a[href="contact.html"]{
+        color: rgba(196, 242, 127, 0.792);
+    }
+/***********************************************************************************/
+    .img_bg{
+        display: flex;
+        height: auto;
+        width: 95%;
+        left: auto;
+        text-align: center;
+        margin-top: 170%;
+    }
+    .header_container{
+        display: block;
+    }
+    
+    .logo,
+    .cont_logo{
+        text-align: center;
+        max-width: none;
+
+    }
+/***********************************************************************************/
+
+    .header_container, .cont_search{        
+        margin: 4%;
+    }
+    .head_text{
+        font-size: 40px;   
+    }
+    .head_button{
+        margin-top: 36%;
+    }
+/***********************************************************************************/
+
+    .products{
+        display: block;
+        width: 90%;
+    }
+    .product_watermalon,
+    .product_clover,
+    .product_sunflower,
+    .product_tomato,
+    .product_eggplant{
+        width: auto;
+    }
+    .product_eggplant{
+        width: auto;
+        margin-right: 10%;
+    }
+    .product_ornamental_2 {
+        margin-top: -3%;
+        margin-left: 6%;
+    }
+    .product_ornamental_1{
+        margin-top: 3%;
+        margin-right: 8%;
+    }
+/***********************************************************************************/
+
+    .union{
+        display: none;
+    }
+    .main_vision_mission{
+        display: block;
+        padding-top: 15%;
+    }
+    .main_vision_mission_text{
+        text-align: center;
+        margin: 0; 
+    }
+    .vision_text1,
+    .mission_text1{
+        margin: 0;
+        max-width: none;
+    }
+    .cont_img3{
+        display: block;
+        width: 80%;
+        margin: 0;
+        margin-left: -5%;
+    }
+    .cont_img2{
+        display: none;
+    }
+/***********************************************************************************/
+    .main_activity{
+        height: auto;
+    }
+    .main_activity_content{
+        display: block;
+    } 
+    .img_3{
+        padding-top: 20px;
+        max-width: 360px;
+        max-height: 360px;
+    }
+    .__main_activity_content{
+        width: 100%;
+    }
+    .activity_img2,
+    .activity_img3,
+    .activity_img4 {
+        margin: 0;
+    }
+    div.__main_activity_content#first{
+        padding-top: 60%;
+    }
+    div.__main_activity_content#second,    
+    div.__main_activity_content#thirst{
+        padding-top: 17%;
+    }
+    .activity_text{
+        margin-bottom: 14%;
+    }
+/***********************************************************************************/
+    footer{
+        margin: 0;
+        display: block;
+    }
+    .restangle5{
+        height: auto;
+        margin-bottom: -3%;
+    }
+    .cont_list{
+        display: inline;
+    }
+    .list2{
+        display: block;
+        gap: none;
+        text-align: center;
+    }
+    .list2 li{
+        margin: 3%;
+    }
+    .cont_list_1{
+        display: block;
+        justify-content: center;
+
+    }
+    .list3{
+        margin-left: 20%;
+    }
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
+    .tomato_one_caption2_1{
+        font-size: 16px;
+    }
+    .tomato_one_caption1_1, 
+    .tomato_one_caption1_2{
+        font-size: 30px;
+    }
+    img.tomato_one_breadcrubs{
+        width: 80%;
+    }
+/***********************************************************************************/
+
+    .tomato_one_all_characteristic_column1{
+        display: block;
+    }
+    
+    .header_container{
+        margin: auto;
+    }
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
+    .contact_us_bg{
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .contact_us_form_img1,
+    .contact_us_form_input_alt,
+    .contact_us_form_btn{
+        width: 100%;
+        margin-bottom: 3%;
+    }
+}
+/*--------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 340px) {
+    ._container_alt{
+        width: 95%;
+    }
+    .img_bg{
+        margin-top: 70%;
+    }
+    .cont_list1{
+        height: 80%;
+    }
+    .main_middle_caption{
+        margin-top: 61%;
+    }
+    .products{
+        margin-top: 17%;
+    }
+    .img_3{
+        padding-top: 41%;
+        padding-left: 8%;
+        width: 290px;
+        height: 210px;
+    }   
+    .list3{
+        margin-left: 13%;
+    }
+    .tomato_text2,
+    .tomato_text3{
+        margin: auto;
+        font-size: 16px;
+        width: 80%;
+    }
+    img.tomato_one_breadcrubs{
+        width: 66%;
+    }
+    .tomato_one_main_img{
+        width: 70%;
+        display: inline;
+    }
+    .tomato_one_plant_list1{
+        font-size: 14px;
+    }
+    .tomato_one_all_characteristic{
+        width: 90%;
+        margin: auto;
+    }
+    .tomato_one_style{
+        margin: auto;
+        padding: 0;
+    }
+    .tomato_one_all_characteristic_column1,
+    .tomato_one_all_characteristic_column2,
+    .tomato_one_all_characteristic_column3{
+        width: 90%;
+    }
+    .tomato_one_caption_conteiner_2{
+        padding-left: 0;
+    }
+}        
